@@ -36,7 +36,7 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
-    ArrayList<HashMap<String,String>> arrayList2 = new ArrayList<>();
+    //ArrayList<HashMap<String,String>> arrayList2 = new ArrayList<>();
     ArrayList<HashMap<String,Integer>> iArrayList = new ArrayList<>();
     private int mJsonHeight = 10;
 
@@ -199,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
                 tvPrice = itemView.findViewById(R.id.textView_price);
                 tvCar = itemView.findViewById(R.id.textView_car);
                 tvDateTime = itemView.findViewById(R.id.textView_time);
-
                 mWaveView1 = (WaveView1)itemView.findViewById(R.id.water_height);
             }
         }
