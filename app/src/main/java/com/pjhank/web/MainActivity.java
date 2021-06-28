@@ -33,6 +33,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import ru.dimorinny.floatingtextbutton.FloatingTextButton;
+
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
@@ -46,15 +48,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
-        catchData();
+        //catchData();
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+        FloatingTextButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
                 catchData();
+                Snackbar.make(view, "Success", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
             }
         });
     }
